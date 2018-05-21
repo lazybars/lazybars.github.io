@@ -430,22 +430,22 @@ transform: translateY(0px);}
 /*SOUNDS*/
 
 .img-bg-s1 {
-	background: url("img/song1.JPG") center;
+	background: url("img/song1.jpg") center;
 	background-size: cover;
 }
 
 .img-bg-s2 {
-	background: url("img/song2.JPG") center;
+	background: url("img/song2.jpg") center;
 	background-size: cover;
 }
 
 .img-bg-s3 {
-	background: url("img/song3.JPG") center;
+	background: url("img/song3.jpg") center;
 	background-size: cover;
 }
 
 .img-bg-s4 {
-	background: url("img/song4.JPG") center;
+	background: url("img/song4.jpg") center;
 	background-size: cover;
 }
 
@@ -460,7 +460,7 @@ transform: translateY(0px);}
 }
 
 .img-bg-s7 {
-	background: url("img/song7.JPG") center;
+	background: url("img/song7.jpg") center;
 	background-size: cover;
 }
 
@@ -472,32 +472,32 @@ transform: translateY(0px);}
 }
 
 .img-bg-m2 {
-	background: url("img/meme2.JPG") center;
+	background: url("img/meme2.jpg") center;
 	background-size: cover;
 }
 
 .img-bg-m3 {
-	background: url("img/meme3.JPG") center;
+	background: url("img/meme3.jpg") center;
 	background-size: cover;
 }
 
 .img-bg-m4 {
-	background: url("img/meme4.JPG") center;
+	background: url("img/meme4.jpg") center;
 	background-size: cover;
 }
 
 .img-bg-m5 {
-	background: url("img/meme5.JPG") center;
+	background: url("img/meme5.jpg") center;
 	background-size: cover;
 }
 
 .img-bg-m6 {
-	background: url("img/meme6.JPG") center;
+	background: url("img/meme6.jpg") center;
 	background-size: cover;
 }
 
 .img-bg-m7 {
-	background: url("img/meme7.JPG") center;
+	background: url("img/meme7.jpg") center;
 	background-size: cover;
 }
 
@@ -619,6 +619,16 @@ transform: translateY(0px);}
 
 .img-bg-w5 {
 	background: url("img/web5.jpg") center;
+	background-size: cover;
+}
+
+.img-bg-w6 {
+	background: url("img/web6.jpg") center;
+	background-size: cover;
+}
+
+.img-bg-w7 {
+	background: url("img/web7.jpg") center;
 	background-size: cover;
 }
 
