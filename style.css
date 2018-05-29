@@ -987,6 +987,9 @@ a.button {
 
 	.grid-item--height2 { height: 700px; }
 
+	.text-item {
+		height: auto !important;
+	}
 }
 
 @media only screen and (max-width: 700px) {
