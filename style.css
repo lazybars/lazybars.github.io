@@ -309,7 +309,7 @@ a.button {
 	display: block;
 	padding: 10px 0px;
 	width: 100%;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	/*text-align: right;*/
 }
 
@@ -460,7 +460,6 @@ a.button {
 	width: 100%;
 	height: 100%;
 	border:15px solid #001;
-	pointer-events: none;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
