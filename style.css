@@ -924,7 +924,7 @@ a.button {
 }
 
 .img-recent2 {
-	background: url("img/web88.jpg") center;
+	background: url("img/web88.JPG") center;
 	background-size: cover;
 }
 
@@ -939,7 +939,7 @@ a.button {
 }
 
 .img-recent5 {
-	background: url("img/milo-reel.jpg") center;
+	background: url("img/milo-reel.JPG") center;
 	background-size: cover;
 }
 
@@ -949,7 +949,7 @@ a.button {
 }
 
 .img-recent7 {
-	background: url("img/booklet.jpg") center;
+	background: url("img/booklet.JPG") center;
 	background-size: cover;
 }
 
@@ -1045,6 +1045,7 @@ a.button {
 	.grid-item,
 	.grid-sizer {
 		width: 100%;
+		height: 200px;
 	}
 
 	.grid-item--width2 { width: 100%; }
