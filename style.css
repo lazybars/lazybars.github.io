@@ -44,7 +44,7 @@ a.home {
 	font-weight: 700;
 	color: #111;
 	text-align: center;
-	margin-bottom: 70px;
+	/*margin-bottom: 70px;*/
 	border-bottom: none;
 }
 
@@ -258,7 +258,7 @@ a.home span {
 
 .conab {
 	display: block;
-	margin-top: 50px;
+	margin-bottom: 50px;
 	font-size: 16px;
 	color: #666; 
 	border-bottom: none;
@@ -915,10 +915,58 @@ a.button {
 	background-size: cover;
 }
 
+/*RECENT*/
+
+
+.img-recent1 {
+	background: url("img/web9.jpg") center;
+	background-size: cover;
+}
+
+.img-recent2 {
+	background: url("img/web88.jpg") center;
+	background-size: cover;
+}
+
+.img-recent3 {
+	background: url("img/print-05.jpg") center;
+	background-size: cover;
+}
+
+.img-recent4 {
+	background: url("img/milo.jpg") center;
+	background-size: cover;
+}
+
+.img-recent5 {
+	background: url("img/milo-reel.jpg") center;
+	background-size: cover;
+}
+
+.img-recent6 {
+	background: url("img/gif7.gif") center;
+	background-size: cover;
+}
+
+.img-recent7 {
+	background: url("img/booklet.jpg") center;
+	background-size: cover;
+}
+
 
 
 .learnmore {
 	 display: none;
+}
+
+@media only screen and (max-width: 1500px) {
+
+	.grid-item {
+		height: 200px;
+	}
+
+	.grid-item--height2 { height: 400px; }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -978,14 +1026,14 @@ a.button {
 		position: relative;
 		float: left;
 		overflow: hidden;
-		height: 350px;
+		height: 150px;
 	}
 
 	.button-group {
-		margin-top: 30px;
+		/*margin-top: 30px;*/
 	}
 
-	.grid-item--height2 { height: 700px; }
+	.grid-item--height2 { height: 300px; }
 
 	.text-item {
 		height: auto !important;
@@ -994,19 +1042,12 @@ a.button {
 
 @media only screen and (max-width: 700px) {
 
-	.grid-item {
-		position: relative;
-		float: left;
-		overflow: hidden;
-		height: 350px;
-	}
-
 	.grid-item,
 	.grid-sizer {
 		width: 100%;
 	}
 
 	.grid-item--width2 { width: 100%; }
-	.grid-item--height2 { height: 700px; }
+	.grid-item--height2 { height: 200px; }
 
 }
