@@ -357,6 +357,9 @@ a.button {
 .grid-sizer {
 	width: 25%;
 	background: #fff;
+}
+
+.grid-item {
 	-webkit-animation-name: bgfade; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: bgfade;
@@ -364,6 +367,7 @@ a.button {
     -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
 	animation-fill-mode: forwards;
 	/*transition-delay: 1s;*/
+	
 }
 
 /* Safari 4.0 - 8.0 */
@@ -961,6 +965,10 @@ a.button {
 
 .text-item .conlink {
 	pointer-events: none;
+}
+
+.grid-sizer {
+	background: transparent !important;
 }
 
 @media only screen and (max-width: 1500px) {
