@@ -943,7 +943,7 @@ a.button {
 }
 
 .img-recent5 {
-	background: url("img/milo-reel.JPG") center;
+	background: url("img/gif8.gif") center;
 	background-size: cover;
 }
 
@@ -954,6 +954,11 @@ a.button {
 
 .img-recent7 {
 	background: url("img/booklet.JPG") center;
+	background-size: cover;
+}
+
+.img-recent8 {
+	background: url("img/fun1.JPG") center;
 	background-size: cover;
 }
 
@@ -971,6 +976,14 @@ a.button {
 	background: transparent !important;
 }
 
+
+	.moblink {
+		display: none;
+	}
+
+	.desklink {
+		display: block;
+	}
 @media only screen and (max-width: 1500px) {
 
 	.grid-item {
@@ -1053,6 +1066,14 @@ a.button {
 }
 
 @media only screen and (max-width: 700px) {
+
+	.moblink {
+		display: block;
+	}
+
+	.desklink {
+		display: none;
+	}
 
 	.grid-item,
 	.grid-sizer {
