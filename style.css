@@ -963,12 +963,12 @@ a.button {
 }
 
 .img-bg-in {
-	background: url("img/in.jpg") center;
+	background: url("img/in.jpeg") center;
 	background-size: cover;
 }
 
 .img-bg-drib {
-	background: url("img/drib.jpg") center;
+	background: url("img/drib.jpeg") center;
 	background-size: cover;
 }
 
