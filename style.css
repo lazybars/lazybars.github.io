@@ -973,7 +973,9 @@ a.button {
 	background-size: cover;
 }
 
-
+.text-item {
+	height: auto !important;
+}
 
 .learnmore {
 	 display: none;
@@ -1071,8 +1073,12 @@ a.button {
 
 	.grid-item--height2 { height: 300px; }
 
-	.text-item {
-		height: auto !important;
+	.text-item h1 {
+		font-size: 24px;
+	}
+
+	.text-item p {
+		font-size: 20px;
 	}
 }
 
