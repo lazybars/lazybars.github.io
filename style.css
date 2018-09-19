@@ -26,7 +26,7 @@ body {
 }
 
 .site-container {
-	max-width: 1900px;
+	/*max-width: 1900px;*/
 	margin: 0 auto;
 }
 
@@ -249,15 +249,16 @@ button:focus {
 .button {
 	font-family: 'Noto Serif KR', sans-serif;
 	background: transparent;
-	color: #999;
+	color: #aaa;
 	font-size: 36px;
+	text-decoration: underline;
 	display: inline-block;
 	cursor: pointer;
 	text-align: right;
 	font-weight: 400;
 	line-height: 1.2em;
 	padding: 5px 30px;
-	border-right: 5px solid transparent;
+	border-right: 10px solid transparent;
 
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
@@ -294,6 +295,7 @@ button:focus {
 	font-size: 44px;
 	padding: 15px 30px;
 	border-right: 10px solid #111;
+	text-decoration: none;
 }
 
 .button-group, .project-desc {
@@ -325,6 +327,10 @@ button:focus {
 	/*text-decoration: underline;*/
 	/*text-align: right;*/
 }
+
+	.button-group .button:first-child {
+		text-decoration: none !important;
+	}
 
 /*.main-content {
 	position: relative;
@@ -477,7 +483,7 @@ button:focus {
 }
 
 .text-item.grid-item {
-	background: #ededed !important;
+	background: #111 !important;
 	-webkit-animation: none !important;
 }
 
@@ -492,14 +498,14 @@ button:focus {
 
 .text-item-content p {
 	font-size: 34px;
-	color: #333;
+	color: #ddd;
 	line-height: 1.55em;
 	padding: 0px;
 	margin:0px;
 }
 
 .grid-item a.reglink {
-	color: #111;
+	color: #fff;
 }
 
 .link-name {
@@ -557,8 +563,8 @@ button:focus {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	-webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);*/
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
@@ -1104,10 +1110,10 @@ button:focus {
 	}
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 740px) {
 
 	.nav-position {
-		padding: 30px 0px;
+		padding: 30px 0px 0px;
 	}
 
 	.text-item-content {
@@ -1127,12 +1133,12 @@ button:focus {
 	.button {
 		font-size: 24px;
 		
-		border: none !important;
+		/*border: none !important;*/
 	}
 
 	.button.is-checked {
 		font-size: 24px;
-		border: none !important;
+		/*border: none !important;*/
 	}
 
 	.button-group .button:first-child {
@@ -1143,6 +1149,11 @@ button:focus {
 			float: none;
 	}
 
+	.button-group .button:first-child {
+		border: none !important;
+		text-decoration: none !important;
+	}
+
 	.moblink {
 		display: block;
 	}
@@ -1151,14 +1162,26 @@ button:focus {
 		display: none;
 	}
 
-	.grid-item,
-	.grid-sizer {
-		width: 100%;
-		height: 200px;
+	.grid {
+		border: 15px solid #fff;
+		border-top: none;
 	}
 
-	.grid-item--width2 { width: 100%; }
+	.grid-item,
+	.grid-sizer {
+		width: 50%;
+		height: 200px;
+		border: 15px solid #fff;
+	}
+
+	.grid-item--width2 { width: 50%; }
 	.grid-item--height2 { height: 200px; }
+
+	.text-item {
+		width: 100%;
+		border: none;
+		border-bottom: 15px solid #fff;
+	}
 
 }
 
