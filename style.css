@@ -1117,14 +1117,23 @@ button:focus {
 	}
 
 	.text-item-content {
-		padding: 40px 30px;
+		padding: 20px 50px;
+		background: #fff;
 	}
 
 	.text-item p {
 		font-size: 20px;
+		color: #222;
 	}
 
+	.text-item a.reglink {
+		
+		color: #000;
+	}
 
+	.text-item span.hide {
+		display: none;
+	}
 
 	.button-group button.button {
 		padding: 10px 5px;
