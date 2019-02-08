@@ -109,19 +109,23 @@
 		position: absolute;
 		z-index: 2;
 		width: 100%;
-		top: 0px;
-		left: 0px;
+		top: 0;
+		left: 0;
 	}
 
 	.footer.info {
 		position: relative;
 		color: #222;
-		text-align: left;
+		/*text-align: left;*/
 	}
 
-	.footer.info a{
-		padding-left: 0px;
-		padding-right: 20px;
+	.footer.info p{
+		max-width: 440px;
+		margin: 0 auto;
+	}
+
+	.footer.info a {
+		padding: 0;
 	}
 
 /*imgs*/
@@ -187,6 +191,10 @@
 		background-color: #260CA1;
 	}
 
+	.img3.img img {
+		max-width: 100%;
+	}
+
 	.img4 {
 		background: #40BED9;
 	}
@@ -220,8 +228,9 @@
 			text-align: center;
 		}
 
-		.footer p {
+		.footer p, .footer a {
 			font-size: 16px;
+			margin: 0 auto;
 		}
 
 		.socials {
