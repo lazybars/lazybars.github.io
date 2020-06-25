@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lil site | our branding examples</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;” />
+  <meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;” />
+  <meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;” />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+</head>
+<body>
+
+<div class="lightbox">
+	<div class="popup-container">
+
+	<img src="img/close-button.png" class="close-btn close-button">
+		<h2>What's up?</h2>
+
+		<form action="https://formspree.io/lilsitehelp@gmail.com" method="POST">
+
+			<input type="text" name="email" placeholder="your email">
+
+			<br>
+
+			<input type="text" name="phone" placeholder="your phone number">
+
+			<br>
+
+			<p>tell us about your project</p>
+
+			<textarea name="message" rows="5" placeholder="i.e. i'm looking for a logo..."></textarea>
+
+			<br>
+			
+			<input type="submit" class="spec submit" value="Submit"> <div class="close-btn spec inverted inlineFix">cancel</div>
+
+		</form>
+
+	</div>
+</div>
+
+<div class="container">
+
+				<div class="nav">
+					
+					<span class="links">
+						<button class="pop-btn spec chat">need help?</button>
+						<a href="index.html" class="logo pointer"><img src="img/logo4.png"></a>
+					</span>
+					<div class="clear"></div>
+				</div>
+
+				<div class="example-display">
+
+					<img src="img/examples.png">
+
+				</div>
+</div>
+
+<script>
+(function ($) {
+    $('.pop-btn').on('click', function(){
+        $('.lightbox').fadeIn(200);
+    });
+
+    $('.lightbox').on('click', function(event){
+        if("lightbox" == event.target.className){
+            $('.lightbox').fadeOut(200);
+        }
+    });
+  
+    $('.close-btn').on('click', function(){
+        $('.lightbox').fadeOut(200);
+    });
+})(jQuery);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Watch Party - Stream Together</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://kit.fontawesome.com/6497f050a5.js" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+		<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;” />
+		<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;” />
+		<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;” />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+	</head>
+
+	<body>
+
+		<div class="mob-nav">
+			<div class="mob-nav-content">
+				<div class="close-mob-nav tog-mob-nav"><i class="fas fa-times"></i></div>
+				<div class="logo">
+					<i class="far fa-comments"></i> watchparty
+				</div>
+				<div>
+					<h4>New</h4>
+					<a href="">Avengers</a>
+					<a href="">Travis Scott</a>
+					<a href="">Trump</a>
+				</div>
+				<div>
+					<h4>Trending</h4>
+					<a href="">The Office</a>
+					<a href="">Avengers</a>
+					<a href="">SpaceX</a>
+				</div>
+				<div>
+					<h4>Filters</h4>
+					<label class="checkbox">18+
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+					<label class="checkbox">HQ
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+					<label class="checkbox">Music
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="col-link tog-modal log-in-btn">Log in</div>
+				<div class="col-link tog-modal sign-up-btn">Sign up</div>
+			</div>
+			<div class="mob-nav-overlay tog-mob-nav"></div>
+		</div>
+
+		<div class="modal">
+
+			<div class="modal-content center-text">
+			<div class="close-modal tog-modal"><i class="fas fa-times"></i></div>
+				<div class="modal-text log-in-text">
+					<div class="logo">
+						<i class="far fa-comments"></i> watchparty
+					</div>
+					<h2>Log in</h2>
+					<p>Welcome back!</p>
+					<div class="modal-inputs">
+						<input type="" name="" placeholder="username">
+						<input type="" name="" placeholder="password">
+						<br>
+						<div class="block-link">Log in</div>
+					</div>
+					<div>Don't have an account? <div class="col-link sign-up-btn">Sign up</div></div>
+				</div>
+
+				<div class="modal-text sign-up-text">
+					<div class="logo">
+						<i class="far fa-comments"></i> watchparty
+					</div>
+					<h2>Sign up</h2>
+					<p>Join the party!</p>
+					<div class="modal-inputs">
+						<input type="" name="" placeholder="email">
+						<input type="" name="" placeholder="username">
+						<input type="" name="" placeholder="password">
+						<br>
+						<div class="block-link">Sign up</div>
+					</div>
+					<div>Already have an account? <div class="col-link log-in-btn">Log in</div></div>
+				</div>
+
+			</div>
+
+			<div class="modal-overlay tog-modal"></div>
+		</div>
+
+		<div class="nav">
+
+			<div class="navbar"></div>
+
+			<div class="navigation">
+				<div>
+					<div class="ham-menu tog-mob-nav"><i class="fas fa-bars"></i></div>
+					<div class="logo">
+						<i class="far fa-comments"></i> watchparty
+					</div>
+					<div class="search-widget-container" id="mainsearch">
+							<div class="open-search"></div>
+							<!-- <div class="close-search"></div> -->
+							<div class="search-widget noselect">
+								<!-- <div class="search-btn"><i class="fas fa-search"></i></div> -->
+								<div class="search-mobile-toggle-area">
+									<div class="search-container flex">
+										<input type="" name="" class="search" placeholder="search">
+										<!-- <div class="b-btn location"><i class="fas fa-map-marker-alt"></i> Toronto</div> -->
+									</div>
+									<div class="close-mob-search mob-search-icon"><i class="fas fa-times"></i></div>
+									<div class="search-options">
+										<div>
+											<h4>New</h4>
+											<a href="">Avengers</a>
+											<a href="">Travis Scott</a>
+											<a href="">Trump</a>
+										</div>
+										<div>
+											<h4>Trending</h4>
+											<a href="">The Office</a>
+											<a href="">Avengers</a>
+											<a href="">SpaceX</a>
+										</div>
+										<div>
+											<h4>Filters</h4>
+											<label class="checkbox">18+
+											  <input type="checkbox">
+											  <span class="checkmark"></span>
+											</label>
+											<label class="checkbox">HQ
+											  <input type="checkbox">
+											  <span class="checkmark"></span>
+											</label>
+											<label class="checkbox">Music
+											  <input type="checkbox">
+											  <span class="checkmark"></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div>
+					<div class="btn tog-modal log-in-btn">Log in</div>
+					<div class="btn tog-modal sign-up-btn">Sign up</div>
+					<div class="mob-search-icon"><i class="fas fa-search"></i></div>
+					<div class="btn feed">
+						<div class="notification">!</div>
+					</div>
+					<div class="scrollToTop"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="vidwrap">
+
+		  <div class="gradientbg"></div>
+
+		  	<!-- bg videos -->
+
+			  <video autoplay muted loop class="selectedvideo ccmusic ccvideo videoposition">
+			    <source src="assets/music.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccmovies ccvideo videoposition">
+			    <source src="assets/movies.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccshows ccvideo videoposition">
+			    <source src="assets/shows.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccgaming ccvideo videoposition">
+			    <source src="assets/gaming.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccsports ccvideo videoposition">
+			    <source src="assets/sports.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccnews ccvideo videoposition">
+			    <source src="assets/news.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccstocks ccvideo videoposition">
+			    <source src="assets/stocks.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="cctech ccvideo videoposition">
+			    <source src="assets/tech.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccdance ccvideo videoposition">
+			    <source src="assets/dance.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccfood ccvideo videoposition">
+			    <source src="assets/food.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccart ccvideo videoposition">
+			    <source src="assets/art.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccscience ccvideo videoposition">
+			    <source src="assets/science.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+			  <video autoplay muted loop class="ccspace ccvideo videoposition">
+			    <source src="assets/space.mp4" type="video/mp4">
+			    Your browser does not support HTML5 video.
+			  </video>
+
+		  	<div class="horizontal-scroll-widget">
+
+		  		<div class="current-open-tile-title">
+		  			<div class="cott-status">Live Music</div>
+		  			<div class="cott-text">Travis Scott Summer Mix</div>
+		  		</div>
+
+				<div class='arrow-left'><i class="fas fa-caret-left"></i></div>
+				<div class='arrow-right'><i class="fas fa-caret-right"></i></div>
+
+					<div class="tile-row splash-scroll-widget">
+
+						<div class="tile-row-scroll">
+							
+							<div class="tile selected" id="ccmusic">
+								<div class="image travis"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-music"></i><span>Music</span></div>
+									<div class="nowplaying">Travis Scott Summer Mix</div>
+									<div class=""></div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccmovies">
+								<div class="image avengers"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-film"></i><span>Movies</span></div>
+									<div class="nowplaying">Avengers - Endgame</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccshows">
+								<div class="image theoffice"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-tv"></i><span>Shows</span></div>
+									<div class="nowplaying">The Office - S02E04</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccgaming">
+								<div class="image ps5leak"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-gamepad"></i><span>Gaming</span></div>
+									<div class="nowplaying">PS5 Console Design Leak</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccsports">
+								<div class="image kobe"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-basketball-ball"></i><span>Sports</span></div>
+									<div class="nowplaying">Remembering Kobe Bryant</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccnews">
+								<div class="image trump"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="far fa-newspaper"></i><span>News</span></div>
+									<div class="nowplaying">Has Trump trumped himself?</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccstocks">
+								<div class="image bitcoin"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-chart-line"></i><span>Stocks</span></div>
+									<div class="nowplaying">Bitcoin at an all time high!</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="cctech">
+								<div class="image ubereats"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-mobile-alt"></i><span>Tech</span></div>
+									<div class="nowplaying">UberEats finally at a tipping point?</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccdance">
+								<div class="image thewoah"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-female"></i><span>Dance</span></div>
+									<div class="nowplaying">The WOAH dance challenge</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccfood">
+								<div class="image gordon"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-utensils"></i><span>Food</span></div>
+									<div class="nowplaying">Gordon Ramsy - Hell's Kitchen</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccart">
+								<div class="image artattack"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-paint-brush"></i><span>Art</span></div>
+									<div class="nowplaying">The Life and times of famous Painters</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccscience">
+								<div class="image billnye"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-flask"></i><span>Science</span></div>
+									<div class="nowplaying">Bill Nye back at it agin!</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="ccspace">
+								<div class="image spacex"></div>
+								<div class="desc">
+									<div class="channeltitle"><i class="fas fa-space-shuttle"></i><span>Space</span></div>
+									<div class="nowplaying">SpaceX Celebrates Launch</div>
+								</div>
+							</div>
+							
+							<div class="tile" id="empty">
+								
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+			<div class="chat">
+				<div class="chatbox">
+
+				<div class="vidtile-space"></div>
+
+			      <div class="userchat talksearch">
+			      	<div class="settings">
+			        	<i class="fas fa-cog"></i>
+			        </div>
+
+			        <form class="send-message-form tog-modal">
+			          <input type="" class="usercomment" name="" placeholder="say something">
+			          <button type="submit">Send</button>
+			        </form>
+			        
+			      </div>
+
+				<div class="log">
+
+			        <div class="userchat" id="gandanwarrior">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">GandanWarrior</span><span class="iswatching">Movies</span></div>
+			          	<div class="speech">Yeah this is LITTY!</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat message" id="guest">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">Guest</span><span class="iswatching">Sports</span></div>
+			          	<div class="speech">This is lit 😀</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="spiderlover">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">spiderlover</span><span class="iswatching">Gaming</span></div>
+			          	<div class="speech">Hey everybody, how are we doing today?</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="gandanwarrior">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">GandanWarrior</span><span class="iswatching">Movies</span></div>
+			          	<div class="speech">Yo this is the craziest show I've ever seen! HAHA like this guy just shot a guy for no reason!!</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="jessica_lee">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">jessica_lee</span><span class="iswatching">Science</span></div>
+			          	<div class="speech">this new science channel is soo good! my son loves it ❤️</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="xxguccixx">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">xXGucciXx</span><span class="iswatching">Gaming</span></div>
+			          	<div class="speech">BRO THIS SHOW IS SO FREAKING LIT BROTHERS AND SISTERS!!!!!</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="adambanks">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">AdamBanks</span><span class="iswatching">Sports</span></div>
+			          	<div class="speech">Anybody have a link for a new water bed?</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="choco91">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">Choco91</span><span class="iswatching">News</span></div>
+			          	<div class="speech">OMG WHAT THE HELL 🙆</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat message" id="thedude420">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">TheDude420</span><span class="iswatching">Sports</span></div>
+			          	<div class="speech">Lmao wtf</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="gandanwarrior">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">GandanWarrior</span><span class="iswatching">Movies</span></div>
+			          	<div class="speech">Yo this is the craziest show I've ever seen! HAHA like this guy just shot a guy for no reason!!</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="jessica_lee">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">jessica_lee</span><span class="iswatching">Science</span></div>
+			          	<div class="speech">this new science channel is soo good! my son loves it ❤️</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="xxguccixx">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">xXGucciXx</span><span class="iswatching">Gaming</span></div>
+			          	<div class="speech">BRO THIS SHOW IS SO FREAKING LIT BROTHERS AND SISTERS!!!!!</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="choco91">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">Choco91</span><span class="iswatching">News</span></div>
+			          	<div class="speech">Doing Great!!</div>
+			          </div>
+			        </div>
+
+			        <div class="userchat" id="adambanks">
+			          <div class="user"></div>
+			          <div>
+			          	<div><span class="username">AdamBanks</span><span class="iswatching">Sports</span></div>
+			          	<div class="speech">Anybody have a link for a new water bed?</div>
+			          </div>
+			        </div>
+
+			      </div>
+
+				<div class="current-party-chat">
+					<div class="cott-status">Live Music</div>
+		  			<div class="cott-text">Travis Scott Summer Mix</div>
+				</div>
+
+				<div class="nav-space"></div>
+
+				</div>
+			</div>
+
+			</div>
+		</div>
+
+		<div class="below-fold info">
+
+			<!-- tiles -->
+
+				<div class="tile-container movie-tiles">
+
+					<h4>✨ Latest Content</h4>
+
+					<div class="horizontal-scroll-widget">
+
+					<div class="tile-controls">
+						<div class='arrow-left'><i class="fas fa-caret-left"></i></div>
+						<div class='arrow-right'><i class="fas fa-caret-right"></i></div>
+						<div class="listview-icon tog-content-list-view list-view"><i class="fas fa-list"></i></div>
+						<div class="listview-icon tog-content-list-view img-view"><i class="far fa-images"></i></div>
+					</div>
+
+						<div class="tile-row movie-scroll-widget">
+							<div class="tile-row-scroll">
+								
+								<div class="tile">
+
+									<div class="image thumb avengersthumb"></div>
+									<div class="image gifimg avengers"></div>
+
+									<div class="desc">
+										<span class="title">Avengers - Endgame</span>
+										<span class="itemdesc">The last installment of the Avengers series.</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 58</span>
+										<span><i class="far fa-eye"></i> 609</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb jokerthumb"></div>
+									<div class="image gifimg joker"></div>
+
+									<div class="desc">
+										<span class="title">Joker</span>
+										<span class="itemdesc">A deeper darker look at the classic villain.</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 51</span>
+										<span><i class="far fa-eye"></i> 588</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb itscarythumb"></div>
+									<div class="image gifimg itscary"></div>
+
+									<div class="desc">
+										<span class="title">It</span>
+										<span class="itemdesc">The scary clown is back!</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 45</span>
+										<span><i class="far fa-eye"></i> 470</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb fridaythumb"></div>
+									<div class="image gifimg friday"></div>
+
+									<div class="desc">
+										<span class="title">Friday</span>
+										<span class="itemdesc">Just another day in the hood... unless 👀</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 36</span>
+										<span><i class="far fa-eye"></i> 469</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb minionsthumb"></div>
+									<div class="image gifimg minions"></div>
+
+									<div class="desc">
+										<span class="title">Minions</span>
+										<span class="itemdesc">Imagine a bunch of yellow M&M's could talk...</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 33</span>
+										<span><i class="far fa-eye"></i> 300</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb avengersthumb"></div>
+									<div class="image gifimg avengers"></div>
+
+									<div class="desc">
+										<span class="title">Avengers - Endgame</span>
+										<span class="itemdesc">The last installment of the Avengers series.</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 58</span>
+										<span><i class="far fa-eye"></i> 609</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb jokerthumb"></div>
+									<div class="image gifimg joker"></div>
+
+									<div class="desc">
+										<span class="title">Joker</span>
+										<span class="itemdesc">A deeper darker look at the classic villain.</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 51</span>
+										<span><i class="far fa-eye"></i> 588</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb itscarythumb"></div>
+									<div class="image gifimg itscary"></div>
+
+									<div class="desc">
+										<span class="title">It</span>
+										<span class="itemdesc">The scary clown is back!</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 45</span>
+										<span><i class="far fa-eye"></i> 470</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb fridaythumb"></div>
+									<div class="image gifimg friday"></div>
+
+									<div class="desc">
+										<span class="title">Friday</span>
+										<span class="itemdesc">Just another day in the hood... unless 👀</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 36</span>
+										<span><i class="far fa-eye"></i> 469</span>
+									</div>
+
+								</div>
+								
+								<div class="tile">
+
+									<div class="image thumb minionsthumb"></div>
+									<div class="image gifimg minions"></div>
+
+									<div class="desc">
+										<span class="title">Minions</span>
+										<span class="itemdesc">Imagine a bunch of yellow M&M's could talk...</span>
+									</div>
+
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 33</span>
+										<span><i class="far fa-eye"></i> 300</span>
+									</div>
+
+								</div>
+								
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<br>
+
+				<div class="tile-container product-tiles">
+
+					<h4>🔥 Most Active Parties</h4>
+
+					<div class="horizontal-scroll-widget">
+
+					<div class="tile-controls">
+						<div class='arrow-left'><i class="fas fa-caret-left"></i></div>
+						<div class='arrow-right'><i class="fas fa-caret-right"></i></div>
+						<div class="listview-icon tog-product-list-view list-view"><i class="fas fa-list"></i></div>
+						<div class="listview-icon tog-product-list-view img-view"><i class="far fa-images"></i></div>
+					</div>
+
+						<div class="tile-row product-scroll-widget">
+							<div class="tile-row-scroll">
+								
+								<div class="tile">
+									
+									<div class="image theofficeparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">The Office - S02E04</span>
+											<span class="itemdesc">We are doing the office watch party! Join us!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 1.8k</span>
+										<span><i class="far fa-eye"></i> 5k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image ps5party"></div>
+									<div class="desc">
+										<div>
+											<span class="title">PS5 Console Design Leak</span>
+											<span class="itemdesc">We're talking about the new leak!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 1.5k</span>
+										<span><i class="far fa-eye"></i> 7.2k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image trumpparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">Has Trump been cancelled?</span>
+											<span class="itemdesc">The latest news has surfaced about Trump... Let's talk!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 1.1k</span>
+										<span><i class="far fa-eye"></i> 6.3k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image gordonparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">Hell's Kitchen - S10E01</span>
+											<span class="itemdesc">Hell's Kitchen series watch party! Let's go!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 989</span>
+										<span><i class="far fa-eye"></i> 4k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image bitcoinparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">Bitcoin on the rise</span>
+											<span class="itemdesc">We are discussing the recent climb in bitcoin! Join in!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 900</span>
+										<span><i class="far fa-eye"></i> 5k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image kobeparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">Remebering Kobe Bryant</span>
+											<span class="itemdesc">Lets all talk about our favourite kobe moments</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 845</span>
+										<span><i class="far fa-eye"></i> 9k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image theofficeparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">The Office - S02E04</span>
+											<span class="itemdesc">We are doing the office watch party! Join us!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 1.8k</span>
+										<span><i class="far fa-eye"></i> 5k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image ps5party"></div>
+									<div class="desc">
+										<div>
+											<span class="title">PS5 Console Design Leak</span>
+											<span class="itemdesc">We're talking about the new leak!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 1.5k</span>
+										<span><i class="far fa-eye"></i> 7.2k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image trumpparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">Has Trump been cancelled?</span>
+											<span class="itemdesc">The latest news has surfaced about Trump... Let's talk!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 1.1k</span>
+										<span><i class="far fa-eye"></i> 6.3k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image gordonparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">Hell's Kitchen - S10E01</span>
+											<span class="itemdesc">Hell's Kitchen series watch party! Let's go!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 989</span>
+										<span><i class="far fa-eye"></i> 4k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image bitcoinparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">Bitcoin on the rise</span>
+											<span class="itemdesc">We are discussing the recent climb in bitcoin! Join in!</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 900</span>
+										<span><i class="far fa-eye"></i> 5k</span>
+									</div>
+								</div>
+								
+								<div class="tile">
+									
+									<div class="image kobeparty"></div>
+									<div class="desc">
+										<div>
+											<span class="title">Remebering Kobe Bryant</span>
+											<span class="itemdesc">Lets all talk about our favourite kobe moments</span>
+										</div>
+									</div>
+									<div class="amenities">
+										<span><i class="far fa-comments"></i> 845</span>
+										<span><i class="far fa-eye"></i> 9k</span>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+		</div>
+
+		<div class="footer">
+
+			<div class="flex">
+
+				
+					<div class="logo">
+						<i class="far fa-comments"></i> watchparty
+					</div>
+
+					<a href="#">Back to top</a>
+
+				<!-- <div class="col">
+					<a href="#">Plus Account</a>
+					<a href="#">Pro Account</a>
+				</div>
+
+				<div class="col">
+					<a href="#">Contact</a>
+					<a href="#">Legal</a>
+				</div>
+
+				<div class="col">
+					<a href="#" class="b2t">Back to Top</a>
+					<a href="#">Site Map</a>
+					<a href="#">FAQ</a>
+					<a href="#">Careers</a>
+					<a href="#">Security</a>
+				</div>
+ -->
+			</div>
+		</div>
+
+
+
+	</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon's Bikes</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../parallax.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;” />
+		<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;” />
+		<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;” />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+		<script>
+			$(document).ready(function(){
+
+			    $(".modal-btn, .modal").click(function(){
+			        $("body").toggleClass("open-modal");
+			    });
+			    
+			    $(".platform").click(function(){
+			        $(this).addClass('selected');
+			    });
+				
+			});
+
+			$(window).scroll(function() {    
+			    var scroll = $(window).scrollTop();
+
+			    if (scroll >= 1) {
+			        $(".min").addClass("minimize");
+			    } else {
+			        $(".min").removeClass("minimize");
+			    }
+			});
+
+		</script>
+</head>
+<body id="simonsbikes" class="white-theme">
+
+<div class="modal">
+
+	<div class="social">
+		<div class="modal-btn logo"></div>
+		<div class="title">Simon's Bikes</div>
+		<a class="textlink modlink" href="#">Directions</a><br>
+		<a class="textlink modlink" href="#">Make payment</a><br>
+		<a class="textlink" href="#">Email me</a><br><br>
+		<a class="modlink" href="#"><i class="fab fa-instagram"></i></a>
+		<a class="modlink" href="#"><i class="fab fa-google"></i></a>
+	</div>
+
+</div>
+		
+<div class="nav modal-btn min">
+	<div class="row">
+		<div class="col">
+			<div class="menu">
+				<i class="fas fa-bars"></i>
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="cta">
+
+<a class="giphycreator" href="https://giphy.com/timbeckhardt" target="blank">Tim Beckhardt</a>
+
+	<!-- <div class="bgimg parallax-window" data-parallax="scroll" data-image-src="https://media.giphy.com/media/l0MYE2KAUSzanAekw/giphy.gif"></div> -->
+
+	<div class="bgimg"></div>
+
+	<div class="bgoverlay"></div>
+
+	<div class="row">
+
+		<div class="col">
+
+			<div class="indent">
+
+			<div class="modal-btn logo-info">
+				<div class="logo"></div>
+				<div class="title">Simon's Bikes</div>
+				<div class="clear"></div>
+			</div>
+			<p>Quick bike repairs in Markham</p>
+			<a class="textlink modal-btn">Get a repair</a>
+		</div>
+
+	</div>
+
+	</div>
+
+</div>
+
+<div class="content">
+
+		
+
+	
+
+<div class="indent">
+
+		<div class="row col1">
+			<div class="col block imgtext">
+				<a href="https://goo.gl/maps/EmeJTC3F2HK2" ></a>
+			<div class="video">
+					<div class="img">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d183842.31727224874!2d-79.01843460526133!3d43.948271334358814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51d21ccd37533%3A0xdd8ceff2f844fcbf!2sOshawa%2C+ON!5e0!3m2!1sen!2sca!4v1540171812266" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<!-- <div class="block type">
+					<div class="desc">
+						<i class="fab fa-google"></i>
+						<p>I service in and around Ajax</p>
+						<div class="linkbar youtube"></div>
+					</div>
+				</div> -->
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="row col3">
+			<div class="col block type">
+				<a href="#" ></a>
+				<div class="desc">
+					<i class="fab fa-google"></i>
+					<p>Reviews (4.7)</p>
+				</div>
+			</div>
+			<div class="col block type">
+				<a href="#" ></a>
+				<div class="desc">
+					<i class="fab fa-facebook"></i>
+					<p>Like my page</p>
+				</div>
+			</div>
+			<div class="col block type">
+				<a href="#" ></a>
+				<div class="desc">
+					<i class="fab fa-paypal"></i>
+					<p>Submit payment</p>
+				</div>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+		<div class="horscroll row col3">
+
+			<div class="col block imgtext">
+				<a href="#" ></a>
+				<div class="image">
+					<div class="img ig1"></div>
+				</div>
+				<div class="block type">
+					<div class="desc">
+						<i class="fab fa-instagram"></i>
+						<p></p>
+						<div class="linkbar instagram"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col block imgtext">
+				<a href="#" ></a>
+				<div class="image">
+					<div class="img ig2"></div>
+				</div>
+				<div class="block type">
+					<div class="desc">
+						<i class="fab fa-instagram"></i>
+						<p></p>
+						<div class="linkbar instagram"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col block imgtext">
+				<a href="#" ></a>
+				<div class="image">
+					<div class="img ig3"></div>
+				</div>
+				<div class="block type">
+					<div class="desc">
+						<i class="fab fa-instagram"></i>
+						<p></p>
+						<div class="linkbar instagram"></div>
+					</div>
+				</div>
+			</div>
+		<div class="clear"></div>
+		</div>
+
+
+
+		<!-- <p class="center">Other options</p> -->
+
+		
+	
+</div>
+
+<div class="footer">
+
+		<div class="row col1">
+		<div class="col">
+			<div class="indent">
+			<div class="block text">
+				<a href="../index.html" >Make a website like this for free at <u>lilsite.com</u></a>
+			</div>
+		</div>
+		</div>
+	<div class="clear"></div>
+	</div>
+
+</div>
+
+</body>
+</html>
