@@ -35,6 +35,7 @@
 		color: #78FFF4;
 		/*padding-bottom: 4px;*/
 		font-size: 20px;
+		/*font-weight: 700;*/
 	}
 
 	.project-details-page .info ul li a, .project-details-page .modal a {
@@ -289,6 +290,7 @@
 		.mob-nav a {
 			display: block;
 			border-bottom: none;
+			line-height: 2em;
 		}
 
 		.mob-nav h2{
@@ -452,13 +454,18 @@
 		.mob-bg {
 			position: absolute;
 			z-index: -1;
-			top: 0;
+			bottom: 10%;
 			left: 0;
 			width: 100%;
-			height: 50%;
+			height: 40%;
 			background: #01FFEA;
 			box-shadow: 0 0 50px #01FFEA;
 			display: none;
+			-moz-transform: skewY(20deg);
+			-webkit-transform: skewY(20deg);
+			-o-transform: skewY(20deg);
+			-ms-transform: skewY(20deg);
+			transform: skewY(20deg);
 		}
 
 		#about .deviceimg {
@@ -1173,14 +1180,14 @@
 
 /*project details page*/
 
-	.project-details-page .info {
-		/*margin-top: 100px;*/
+	.project-details-page .center-text {
+		margin-top: 30px;
 	}
 
-	.project-details-page a.fill {
+	/*.project-details-page a.fill {
 		margin-top: 50px; 
-		color: 
-	}
+		
+	}*/
 
 	.project-details-page .container {
 		padding:0 30px;
@@ -1389,17 +1396,21 @@
 
 	@media only screen and (max-width: 900px) {
 
-		#home .project a.fill {
+		/*#home .project a.fill {
 			color: #000;
 			border: 2px solid #111;
 		}
 
-		.mob-bg {
-			display: block;
-		}
-
 		#about {
 			color: #000;
+		}*/
+
+		.project#about::after {
+		    background: #000;
+		}
+
+		.mob-bg {
+			display: block;
 		}
 
 		.deviceimg-container {
@@ -1612,13 +1623,13 @@
 		   max-width: 100%;
 		}
 
-		#home .text a  {
+		/*#home .text a  {
 		    font-size: 14px;
-		}
-		#home .project a.fill  {
+		}*/
+		/*#home .project a.fill  {
 		    background: #78FFF4;
 		    border: none;
-		}
+		}*/
 
 	}
 

@@ -20,7 +20,7 @@
 	}
 
 		#categories .container {
-			padding: 0 60px;
+			padding: 0 5px;
 		}
 
 	.flex {
@@ -1066,6 +1066,10 @@
 
 		.tile {
 			width: 50%;
+		}
+
+		.hidebtn {
+			display: none;
 		}
 
 		.element-item {
