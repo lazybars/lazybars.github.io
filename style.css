@@ -24,10 +24,9 @@
 	a.fill {
 		border: none;
 		padding: 10px 25px;
-		background: #000;
 		color: #78FFF4;
 		border-radius: 430px;
-		border: 2px solid #111;
+		border: 2px solid #78FFF4;
 		line-height: 3.6em;
 	}
 
@@ -378,6 +377,10 @@
 		background: #fff;
 		opacity: 0.5;
 	}
+
+	/*.scrolled .nav-btn span {
+		background: #fff;
+	}*/
 
 	.logo {
 		/*float: left;*/
@@ -1174,6 +1177,11 @@
 		/*margin-top: 100px;*/
 	}
 
+	.project-details-page a.fill {
+		margin-top: 50px; 
+		color: 
+	}
+
 	.project-details-page .container {
 		padding:0 30px;
 	}
@@ -1381,6 +1389,11 @@
 
 	@media only screen and (max-width: 900px) {
 
+		#home .project a.fill {
+			color: #000;
+			border: 2px solid #111;
+		}
+
 		.mob-bg {
 			display: block;
 		}
@@ -1398,6 +1411,8 @@
 		}
 
 		#about .deviceimg-container {
+			pointer-events: none;
+			z-index: 0;
     		left: auto;
 		    top: auto;
 		    right: 25%;
@@ -1578,7 +1593,12 @@
 		}
 
 		#about .deviceimg-container {
+			z-index: -1;
 		    bottom: 10%;
+		}
+
+		#about {
+			color: #fff;
 		}
 
 		.text {
@@ -1594,6 +1614,21 @@
 
 		#home .text a  {
 		    font-size: 14px;
+		}
+		#home .project a.fill  {
+		    background: #78FFF4;
+		    border: none;
+		}
+
+	}
+
+	@media only screen and (max-height: 670px) {
+
+		#about .deviceimg-container {
+		    bottom: 10%;
+		}
+		.deviceimg-container {
+		    bottom: 15%;
 		}
 
 	}
