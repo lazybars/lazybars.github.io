@@ -23,7 +23,7 @@
 
 	#home .project a {
 		/*border-bottom: none;*/
-		/*color: #01FFEA;*/
+		color: #78FFF4;
 		/*padding-bottom: 4px;*/
 		font-size: 20px;
 	}
@@ -38,7 +38,10 @@
 	}
 
 	/*a::after {
-		content: " >"
+		font-family: FontAwesome;
+		content: "\f105";
+		padding-left: 7px;
+		font-size: 0.9em;
 	}*/
 
 
@@ -1446,7 +1449,7 @@
 			max-width: 100%;
 		}
 
-		.text p {
+		#home .text p {
 		    font-size: 18px;
 		    margin: 25px 0;
 		   max-width: 100%;
@@ -1535,14 +1538,36 @@
 			font-size: 30px;
 		}
 
-		/*.darkoverlay {
+		.darkoverlay {
 	  		opacity: 1;
 	  		
 			background: -moz-linear-gradient(top,  rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.4) 75%, rgba(0,0,0,0.75) 100%);
 			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.4) 75%,rgba(0,0,0,0.75) 100%);
 			background: linear-gradient(to bottom,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.4) 75%,rgba(0,0,0,0.75) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#bf000000',GradientType=0 );
-	  	}*/
+	  	}
+	  	.deviceimg-container {
+		    bottom: 10%;
+		}
+
+		#about .deviceimg-container {
+		    bottom: 10%;
+		}
+
+		.text {
+			padding: 0 15px;
+	  	top: 20px;
+	  }
+
+		#home .text p {
+		    font-size: 16px;
+		    margin: 15px 0;
+		   max-width: 100%;
+		}
+
+		#home .text a  {
+		    font-size: 14px;
+		}
 
 	}
 
