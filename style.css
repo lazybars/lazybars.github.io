@@ -454,12 +454,12 @@
 		.mob-bg {
 			position: absolute;
 			z-index: -1;
-			bottom: 10%;
+			bottom: 0;
 			left: 0;
 			width: 100%;
 			height: 40%;
 			background: #01FFEA;
-			box-shadow: 0 0 50px #01FFEA;
+			box-shadow: 0 0 90px #01FFEA;
 			display: none;
 			-moz-transform: skewY(20deg);
 			-webkit-transform: skewY(20deg);
@@ -551,7 +551,7 @@
 		.text p {
 			font-size: 24px;
 			margin:40px 0;
-			max-width: 450px;
+			/*max-width: 460px;*/
 		}
 
 		.text .name {
@@ -722,6 +722,7 @@
 		border-radius: 10px;
 		cursor: pointer;
 		border: 2px solid rgba(255,255,255,0.1);
+		transition: 0.3s all ease;
 	}
 
 	.img-tiles .img-tile:hover {
@@ -729,7 +730,7 @@
 		border: 2px solid rgba(255,255,255,0.3);
 	}
 
-	#dollarama .img-tiles .img-tile, #watchparty .img-tiles .img-tile, #lilsite .img-tiles .img-tile {
+	#aboutme .img-tiles .img-tile, #dollarama .img-tiles .img-tile, #watchparty .img-tiles .img-tile, #lilsite .img-tiles .img-tile {
 		width: 31%;
 		padding-top: 31%;
 		margin: 1%;
@@ -741,6 +742,53 @@
 	 {
 		display: block;
 	}
+
+	/*about*/
+
+		#aboutme .img-tile.tile-1, #aboutme .tile-1 .img-tile {
+			background: url("websites/dollarama/img/pd/t8alt.png") center no-repeat;
+			background-size: cover;
+		}
+
+		#aboutme .img-tile.tile-2, #aboutme .tile-2 .img-tile {
+			background: url("img/archive/1.png") center no-repeat;
+			background-size: cover;
+		}
+
+		#aboutme .img-tile.tile-3, #aboutme .tile-3 .img-tile {
+			background: url("websites/lilsite/img/pd/t7alt.png") center no-repeat;
+			background-size: cover;
+		}
+
+		#aboutme .img-tile.tile-4, #aboutme .tile-4 .img-tile {
+			background: url("img/archive/5.png") center no-repeat;
+			background-size: cover;
+		}
+
+		#aboutme .img-tile.tile-5, #aboutme .tile-5 .img-tile {
+			background: url("img/archive/4.png") center no-repeat;
+			background-size: cover;
+		}
+
+		#aboutme .img-tile.tile-6, #aboutme .tile-6 .img-tile {
+			background: url("img/archive/3.png") center no-repeat;
+			background-size: cover;
+		}
+
+		#aboutme .img-tile.tile-7, #aboutme .tile-7 .img-tile {
+			background: url("img/archive/49.png") center no-repeat;
+			background-size: cover;
+		}
+
+		#aboutme .img-tile.tile-8, #aboutme .tile-8 .img-tile {
+			background: url("websites/watchparty/assets/pd/t9alt.png") center no-repeat;
+			background-size: cover;
+		}
+
+		#aboutme .img-tile.tile-9, #aboutme .tile-9 .img-tile {
+			background: url("img/archive/13.png") center no-repeat;
+			background-size: cover;
+		}
 
 	/*watchparty*/
 
@@ -1321,14 +1369,24 @@
 			background-size: cover;
 		}
 
-	/*archive*/
+	/*archive & about me*/
 
 		#archive .next-project {
-			background: url("img/dollaramabanner.png") center;
+			background: url("img/watchpartybanner.png") center;
 			background-size: cover;
 		}
 
 		#archive .footer .deviceimg {
+			background: url("img/dollaramadevice.png") center;
+			background-size: cover;
+		}
+
+		#aboutme .next-project {
+			background: url("img/dollaramabanner.png") center;
+			background-size: cover;
+		}
+
+		#aboutme .footer .deviceimg {
 			background: url("img/dollaramadevice.png") center;
 			background-size: cover;
 		}
@@ -1372,14 +1430,6 @@
 
 	}
 
-	@media only screen and (max-width: 1415px) {
-		
-		#home .logo {
-			margin-left: 0;
-		}
-
-	}
-
 
 	@media only screen and (max-width: 950px) {
 
@@ -1394,7 +1444,7 @@
 	}
 
 
-	@media only screen and (max-width: 900px) {
+	@media only screen and (max-width: 1025px) {
 
 		/*#home .project a.fill {
 			color: #000;
@@ -1405,29 +1455,33 @@
 			color: #000;
 		}*/
 
+		h1 {
+			font-size: 3em;
+		}
+
 		.project#about::after {
 		    background: #000;
 		}
 
 		.mob-bg {
 			display: block;
+			height: 30%;
 		}
 
 		.deviceimg-container {
     		left: auto;
 		    top: auto;
 		    right: 55%;
-		    bottom: 20%;
+		    bottom: 30%;
 		    transform: none;
 		}
 
 		#about .deviceimg-container {
 			pointer-events: none;
-			z-index: 0;
     		left: auto;
 		    top: auto;
-		    right: 25%;
-		    bottom: 20%;
+		    right: 45%;
+		    bottom: 30%;
 		    transform: none;
 		}
 
@@ -1446,7 +1500,7 @@
 			margin: 0.7%;
 		}
 
-		#dollarama .img-tiles .img-tile, #watchparty .img-tiles .img-tile, #lilsite .img-tiles .img-tile {
+		#aboutme .img-tiles .img-tile, #dollarama .img-tiles .img-tile, #watchparty .img-tiles .img-tile, #lilsite .img-tiles .img-tile {
 			width: 30%;
 			padding-top: 30%;
 			margin: 0.3% 0.7%;
@@ -1463,16 +1517,20 @@
 			padding: 0 0 40px;
 		}
 
-	  .text {
+		#home .project {
+			text-align: center;
+		}
 
-	  	top: 40px;
-		-moz-transform: translateY(0%);
-		-webkit-transform: translateY(0%);
-		-o-transform: translateY(0%);
-		-ms-transform: translateY(0%);
-		transform: translateY(0%);
+	  #home .text {
+	  	left:50%;
+	  	top: 80px;
+		transform: translate(-50%, 0%);
 	    width: 100%;
 	  }
+
+		/*#home .text p {
+		   max-width: 100%;
+		}*/
 		
 	  .project {
 	  	background-position: 80% 20% !important;
@@ -1496,10 +1554,25 @@
 
 	}
 
-	@media only screen and (max-width: 750px) {
+	@media only screen and (max-width: 770px) {
+
+		#home .text {
+		  	left:50%;
+		  	top: 40px;
+			transform: translate(-50%, 0%);
+		    width: 100%;
+		  }
+
+		.mob-bg {
+			height: 40%;
+		}
 
 		#home .text {
 			max-width: 100%;
+		}
+
+		#home .text a  {
+		    font-size: 18px;
 		}
 
 		#home .text p {
@@ -1508,19 +1581,15 @@
 		   max-width: 100%;
 		}
 
-		#home .text a  {
-		    font-size: 18px;
+		.deviceimg-container {
+		    bottom: 30%;
+		    right: 50%;
 		}
 
-		#home .project {
-			text-align: center;
+		#about .deviceimg-container {
+		    right: 35%;
+		    bottom: 30%;
 		}
-
-		/*#about .deviceimg-container {
-    		left: 5%;
-    		top: 50%;
-			transform: translate(-20%, -50%);
-		}*/
 
 		.deviceimg {
 		   width: 802px;
@@ -1565,30 +1634,28 @@
 
 	@media only screen and (max-width: 500px) {
 
+		
+
+		#about .deviceimg-container {
+		    right: 25%;
+		    bottom: 20%;
+		}
+
+
 		#home .info .col {
 			text-align: right;
 		}
 		
 		h1 {
-			font-size: 35px;
+			font-size: 30px;
 		}
-		
-		/*.deviceimg-container {
-    		left: 0;
-    		top: 55%;
-			transform: translate(-80%, -50%);
-		}*/
-
-		/*.darkoverlay {
-	  		opacity: 1;
-	  	}*/
 
 	}
 
 	@media only screen and (max-width: 374px) {
 		
 		h1 {
-			font-size: 30px;
+			font-size: 24px;
 		}
 
 		.darkoverlay {
