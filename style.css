@@ -76,7 +76,7 @@
 	}
 
 	ul {
-		list-style: square;
+		list-style: none;
 		padding-left: 15px;
 		line-height: 1.6em;
 	}
@@ -91,6 +91,8 @@
 		width: 0.8em;
 		margin-left: -0.8em;
 		font-size: 20px;
+		color: #00F3D9;
+		content: "\25AA";
 	}
 
 	ul.decimal {
@@ -631,7 +633,7 @@
 
 		#dollarama ul li::before {
 			content: "\25AA";
-			color: #C8AE75;
+			/*color: #C8AE75;*/
 		}
 
 		#dollarama.project-details-page {
@@ -657,7 +659,7 @@
 
 		#watchparty ul li::before {
 			content: "\25AA";
-			color: #00F3D9;
+			/*color: #00F3D9;*/
 		}
 
 		#watchparty .deviceimg {
@@ -683,7 +685,7 @@
 
 		#lilsite ul li::before {
 			content: "\25AA";
-			color: #B41386;
+			/*color: #B41386;*/
 		}
 
 		#lilsite .deviceimg {
@@ -1404,7 +1406,7 @@
 		}
 		
 		.container, .text {
-			padding: 0 30px;
+			padding: 0 20px;
 		}
 
 		.project-details-page .text {
@@ -1582,12 +1584,16 @@
 		}
 
 		.deviceimg-container {
-		    bottom: 30%;
-		    right: 50%;
+		    right: auto;
+		    left: 0;
+		    transform: translateX(-52%); 
+		    bottom: 20%;
 		}
 
 		#about .deviceimg-container {
-		    right: 35%;
+		    right: auto;
+		    left: 48%;
+		    transform: translateX(-50%); 
 		    bottom: 30%;
 		}
 
@@ -1596,8 +1602,8 @@
     		height: 658px;
 		}
 		#about .deviceimg {
-		    width: 692px;
-		    height: 883px;
+		    width: 520px;
+    		height: 666px;
 		} 
 
 		.modal-content {
@@ -1698,6 +1704,14 @@
 		    border: none;
 		}*/
 
+	}
+
+	@media only screen and (max-height: 500px) {
+		.darkoverlay {
+	  		opacity: 1;
+	  		
+			background: rgba(0,0,0,0.8);
+	  	}
 	}
 
 	@media only screen and (max-height: 670px) {
