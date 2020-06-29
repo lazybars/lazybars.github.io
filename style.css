@@ -1391,7 +1391,7 @@
 	/*archive & about me*/
 
 		#archive .next-project {
-			background: url("img/watchpartybanner.png") center;
+			background: url("img/dollaramabanner.png") center;
 			background-size: cover;
 		}
 
@@ -1401,13 +1401,14 @@
 		}
 
 		#aboutme .next-project {
-			background: url("img/dollaramabanner.png") center;
+			background: url("img/archivebanner.png") center;
 			background-size: cover;
 		}
 
 		#aboutme .footer .deviceimg {
-			background: url("img/dollaramadevice.png") center;
+			background: url("img/archivedevice.png") center;
 			background-size: cover;
+
 		}
 
 /*mobile*/
