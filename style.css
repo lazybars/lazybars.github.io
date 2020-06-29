@@ -131,6 +131,9 @@
 		float: none !important;
 		clear: both;
 	}
+	.sfont{
+		font-size: 14px;
+	}
 
 /*modal*/
 
