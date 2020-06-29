@@ -1184,7 +1184,7 @@
 		}
 
 		#archive .img-tile.tile-49, #archive .tile-49 .img-tile {
-			background: url("websites/dollarama/img/pd/t6.png") #121318 center no-repeat;
+			background: url("websites/dollarama/img/pd/t8alt.png") center no-repeat;
 			background-size: cover;
 		}
 
@@ -1199,7 +1199,7 @@
 		}
 
 		#archive .img-tile.tile-52, #archive .tile-52 .img-tile {
-			background: url("websites/lilsite/img/pd/t6.png") #111 center no-repeat;
+			background: url("websites/lilsite/img/pd/t7alt.png") center no-repeat;
 			background-size: cover;
 		}
 
@@ -1647,7 +1647,7 @@
 
 		#about .deviceimg-container {
 		    right: 25%;
-		    bottom: 20%;
+		    bottom: 21.5%;
 		}
 
 

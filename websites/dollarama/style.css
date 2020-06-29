@@ -942,10 +942,33 @@
 		#follow .rule {
 			font-size: 35px;
 		}
+		.cta .container {
+			padding: 0 30px;
+		}
+
+		.cta .flex, #footer .flex {
+			flex-direction: column;
+		}
+
+		.cta-text {
+			text-align: center;
+			margin-top: 100px;
+		}
+		.cta .cta-image, .cta-image {
+			/*width: 335px;
+			height: 378px;*/
+			pointer-events: none;
+			margin-left: -60px;
+			margin-top: 0px;
+		}
+
+		h1 {
+			font-size: 48px;
+		}
 
 	}
 
-	@media only screen and (max-width: 1000px) {
+	@media only screen and (max-width: 760px) {
 
 		a {
 			font-size: 12px;
@@ -1025,7 +1048,7 @@
 
 	}
 
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 760px) {
 
 		#follow .rule {
 			font-size: 24px;
@@ -1043,9 +1066,9 @@
 			padding: 8px 13px;
 		}
 
-		.container {
+		/*.container {
 			padding: 100px 30px;
-		}
+		}*/
 
 		.cta .container {
 			padding: 0 30px;
@@ -1060,12 +1083,9 @@
 			/*margin-top: 150px;*/
 		}
 
-		.cta {
-			/*height:80vh;*/
-		}
-
 		.tile {
-			width: 50%;
+			width: 43%;
+			margin: 2% 3%;
 		}
 
 		.hidebtn {
@@ -1111,7 +1131,12 @@
 	@media only screen and (max-width: 545px) {
 
 		#follow .rule {
-			font-size: 15px;
+			font-size: 24px;
+			line-height: 1.6em;
+		}
+
+		#follow h1 {
+			font-size: 38px;
 		}
 
 	}
