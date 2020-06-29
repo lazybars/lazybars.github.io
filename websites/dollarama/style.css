@@ -81,7 +81,7 @@
 	a.fill {
 		color: #111;
 		background: #fff;
-		border: 2px solid #fff;
+		border: 3px solid #fff;
 	}
 
 	a.scroll {
@@ -1098,7 +1098,7 @@
 
 		.tilt-tile {
 			border-radius: 15px;
-			border-width: 2px;
+			/*border-width: 2px;*/
 			top: 5px;
 			left: 5px;
 			right: 5px;
