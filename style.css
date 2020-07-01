@@ -795,12 +795,12 @@
 		}
 
 		#aboutme .img-tile.tile-7, #aboutme .tile-7 .img-tile {
-			background: url("img/archive/49.png") center no-repeat;
+			background: url("img/archive/16.png") center no-repeat;
 			background-size: cover;
 		}
 
 		#aboutme .img-tile.tile-8, #aboutme .tile-8 .img-tile {
-			background: url("websites/watchparty/assets/pd/t9alt.png") center no-repeat;
+			background: url("img/archive/30.png") center no-repeat;
 			background-size: cover;
 		}
 
@@ -1355,12 +1355,12 @@
 	/*dollarama*/
 
 		#dollarama .next-project {
-			background: url("img/watchpartybanner.png") center;
+			background: url("img/lilsitebanner.png") center;
 			background-size: cover;
 		}
 
 		#dollarama .footer .deviceimg {
-			background: url("img/watchpartydevice.png") center;
+			background: url("img/lilsitedevice.png") center;
 			background-size: cover;
 		}
 
