@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Enter Password</title>
+	<title>:)</title>
 	<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;” />
 	<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;” />
 	<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;” />
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript">
-		function TheLogin() {
-
-		// wow good job hacker :')
-
-		var password = 'xciPdksj45kj%8*';
-
-		if (this.document.login.pass.value == password) {
-		  top.location.href="about.html";
-		}
-		else {
-		  window.alert("Incorrect password, please try again.");
-		  }
-		}
-
-	</script>
+	
 	<style type="text/css">
 	* {
 		box-sizing: border-box;
@@ -30,7 +14,7 @@
 		body {
 			font-family: "arial", serif;
 			height: 100vh;
-			background: url("https://media.giphy.com/media/3oEdv1GbekAakxXO8g/giphy.gif") center;
+			background: url("https://media.giphy.com/media/26BRvIYDe4ILO60Ni/giphy.gif") center;
 			background-size: cover;
 			overflow-y: hidden;
 		}
@@ -43,36 +27,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%,-50%);
-			/*background: #000;*/
 			text-align: center;
-		}
-		.password h1 {
-			text-transform: uppercase;
-			letter-spacing: 5px;
-			font-size: 20px;
-		}
-		input[type=password], input[type=button] {
-			display: block;
-			width: 100%;
-			max-width: 300px;
-			margin: 20px 0;
-			background: #000;
-			border-radius: 20px;
-			padding: 5px 10px;
-			color: #fff;
-			border: 2px solid rgba(255,255,255,0.3);
-		}
-		input[type=button] {
-			border-color: #fff;
-			background: #fff;
-			color: #000;
-			font-weight: 900;
-			text-transform: uppercase;
-			letter-spacing: 3px;
-			cursor: pointer;
-		}
-		input:focus {
-		    outline-width: 0;
 		}
 	</style>
 </head>
@@ -80,12 +35,7 @@
 
 <div class="password">
 
-	<!-- <h1>Enter Password</h1> -->
-	<form name="login">
-	<input type="password" name="pass" size="17" onkeydown="if(event.keyCode==13) return false;">
-	<input type="button" value="enter password" onclick="javascript:TheLogin(this.form)">
-	</form>
-
+	
 </div>
 
 </body>
