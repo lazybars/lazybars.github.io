@@ -1,0 +1,409 @@
+/*default*/
+
+	body {
+		font-family: 'Muli', sans-serif;
+		margin: 0;
+	}
+
+	a {
+		font-size: 18px;
+		text-decoration: none;
+		color: #002B8C;
+		font-weight: 900;
+		margin: 0 10px;
+		border-radius: 50px;
+	}
+
+	a:hover {
+		opacity: 0.8;
+	}
+
+	.outline {
+		padding: 5px 20px;
+		margin: 0 5px;
+		border: 3px solid #002B8C;
+	}
+
+	.full {
+		padding: 5px 20px;
+		margin: 0 5px;
+		border: 3px solid #FFCE00;
+		background: #FFCE00;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.container {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.title {
+		font-size: 36px;
+		/*background: #FFCE00;*/
+		padding: 10px 0;
+		margin-bottom: 25px;
+		text-align: center;
+		line-height: 1.1em;
+		letter-spacing: -2px;
+		font-weight: 900;
+		color: #002B8C;
+	}
+
+	h1 {
+		font-size: 56px;
+		line-height: 1.1em;
+		letter-spacing: -2px;
+		font-weight: 900;
+		color: #002B8C;
+	}
+
+	h2 {
+		font-size: 36px;
+		/*line-height: 1.1em;*/
+		letter-spacing: -2px;
+		font-weight: 900;
+		color: #002B8C;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+/*nav*/
+
+	.nav {
+		position: absolute;
+		z-index: 3;
+		width: 100%;
+		padding: 50px 0;
+	}
+
+	.logo {
+		width: 150px;
+		color: #fff;
+		font-weight: 900;
+		font-size: 30px;
+	}
+
+/*cta*/
+
+	.cta {
+		position: relative;
+		width: 100%;
+		height: 80vh;
+		overflow: hidden;
+		background: #ff6e03;
+		background: -moz-linear-gradient(left, #ff6e03 0%, #ffac20 100%);
+		background: -webkit-linear-gradient(left, #ff6e03 0%,#ffac20 100%);
+		background: linear-gradient(to right, #ff6e03 0%,#ffac20 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e03', endColorstr='#ffac20',GradientType=1 );
+	}
+
+	.overlay {
+		position: absolute;
+		z-index: 1;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		background: #FF7406;
+		opacity: 0.4;
+	}
+
+	.cta-text {
+		position: absolute;
+		width: 100%;
+		max-width: 750px;
+		z-index: 2;
+		top: 45%;
+		left: 50%;
+		text-align: center;
+		transform: translate(-50%,-50%);
+	}
+
+	.cta-text h1 {
+		color: #fff;
+		/*color: #002B8C;*/
+		/*margin-bottom: 20px;*/
+	}
+
+	.input {
+		position: relative;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	input {
+		font-family: 'Muli', sans-serif;
+		padding: 8px 20px;
+		border-radius: 50px;
+		border:none;
+		width: 100%;
+		margin-left: -20px;
+		font-size: 18px;
+	}
+
+	.submit {
+		position: absolute;
+		right: -25px;
+		top: 0;
+		border-radius: 0 50px 50px 0;
+	}
+
+/*parallax*/
+
+	.parallax {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    left: 0;
+	}
+	.prlx {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    left:0;
+	    background-repeat: no-repeat;
+	    background-position: top center;
+	}
+	/*.prlx-layer3 {
+	    background-image: url(bg_color.png);
+	    background-size: cover;
+	}*/
+	.prlx-layer2 {
+	    background-image: url(bg_hexagons.png);
+	    background-size: cover;
+	}
+	.prlx-layer1 {
+	    background-image: url(bg_map.png);
+	    background-size: cover;
+	}
+
+/*content*/
+
+	#points {
+		position: relative;
+		z-index: 4;
+	}
+
+	.points {
+		display: flex;
+		align-items: flex-start;
+		margin-top: -150px;
+		padding: 30px;
+		background: #fff;
+		border-radius: 10px;
+	}
+
+	.point {
+		display: flex;
+		align-items: flex-start;
+		padding: 10px;
+	}
+
+	.point img {
+
+		padding-right: 20px;
+	}
+
+	.point a {
+		font-size: 22px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.point p {
+		color: #333;
+		margin-top: 10px;
+	}
+
+	.dash div {
+		padding: 50px 0 20px;
+	}
+
+	.stats {
+		color: #fff;
+		margin-top: 100px;
+		padding: 50px 0;
+		background: #002B8C;
+	}
+
+	.stats h2 {
+		color: #FFCE00;
+	}
+
+	.stats .col {
+		width: 33%;
+		display: inline-block;
+	}
+
+	.dash img {
+		width: 100%;
+		max-width: 850px;
+	}
+
+/*table*/
+
+	table { 
+		width: 980px; 
+		border-collapse: collapse; 
+		margin: 0 auto;
+		border: 1px solid #ccc;
+	}
+
+	thead {
+		color: #666;
+		/*background: #ddd;*/
+	}
+
+	thead td, thead th {
+		/*font-weight: 900;*/
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 10px;
+		padding: 10px 30px;
+	}
+
+	td, th { 
+		padding: 30px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+		font-size: 18px;
+		border-left: none;
+		border-right: none;
+	}
+
+	.change {
+		color: #f00;
+	}
+
+	.coinimg img {
+		width: 30px;
+		margin-right: 10px;
+	}
+
+	.coinimg span {
+		display: flex;
+		align-items: center;
+	}
+
+/*footer*/
+
+	#footer {
+		margin-top: 100px;
+		/*background: url(bg_hexagons.png);
+		background-size: cover;*/
+		background-color: #002B8C;
+	}
+
+	#footer .container {
+		padding: 100px 0;
+	}
+
+	#footer .flex.container {
+		align-items:flex-start;
+		padding: 100px 0 0;
+	}
+
+	#footer p{
+		font-size: 24px;
+		font-weight: 900;
+		color: #FFCE00;
+	}
+
+	#footer a{
+		font-size: 12px;
+		display: block;
+		margin: 0;
+		color: #fff;
+	}
+
+/*mobile*/
+
+	@media only screen and (max-width: 1100px) {
+
+		.container, .cta-text {
+			max-width: 600px;
+			padding: 0 20px;
+			width: auto;
+		}
+
+		.nav .links span {
+			display: none;
+		}
+
+		.cta-text, .stats .col {
+			width: 100%;
+		}
+
+		h1 {
+			font-size: 36px;
+			padding: 0 20px;
+			text-align: center;
+		}
+
+		.title {
+			font-size: 26px;
+		}
+
+		.points, #footer .flex {
+			flex-direction: column;
+		}
+
+		#footer .col, #footer .logo {
+			width: 100%;
+			text-align: center;
+		}
+
+		#table {
+			margin: 0 20px;
+		}
+
+		table { 
+		  	width: 100%; 
+		  	max-width: 500px;
+		  	border: none;
+		}
+
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+
+		td:before { 
+			position: absolute;
+			top: 30px;
+			left: 15px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+			content: attr(data-column);
+			color: #000;
+			font-weight: bold;
+		}
+
+		/*td, th {
+			padding: 10px;
+		}*/
+
+	}
