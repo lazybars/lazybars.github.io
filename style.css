@@ -852,7 +852,7 @@
 			background-size: cover;
 		}
 
-		#watchparty .img-tile.tile-7, #watchparty .tile-7 .img-tile {
+		#watchparty .img-tile.tile-7, #watchparty .tile-7 .img-tile,#archive .img-tile.tile-50, #archive .tile-50 .img-tile {
 			background: url("websites/watchparty/assets/pd/t7.png") center no-repeat;
 			background-size: cover;
 		}
@@ -1213,10 +1213,10 @@
 			background-size: cover;
 		}
 
-		#archive .img-tile.tile-50, #archive .tile-50 .img-tile {
+		/*#archive .img-tile.tile-50, #archive .tile-50 .img-tile {
 			background: url("websites/watchparty/assets/pd/t1.png") center no-repeat;
 			background-size: cover;
-		}
+		}*/
 
 		#archive .img-tile.tile-51, #archive .tile-51 .img-tile {
 			background: url("websites/lilsite/img/pd/t4.png") #000 center no-repeat;
