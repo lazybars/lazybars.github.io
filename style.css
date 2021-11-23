@@ -586,14 +586,16 @@
 		}
 
 		.text .name {
-			/*font-size: 16px;
-			color: #777;*/
-			/*font-weight: 700;*/
-			/*letter-spacing: 10px;
+			font-size: 20px;
+			color: #777;
+			font-weight: 700;
+			letter-spacing: 10px;
+			padding: 0px !important;
 			margin-bottom: 20px;
-			text-transform: uppercase;*/
-			display: none;
-			opacity: 0;
+			margin-top: 0px !important;
+			text-transform: uppercase;
+			/*display: none;
+			opacity: 0;*/
 		}
 
 		.info {
@@ -1483,6 +1485,10 @@
 
 
 	@media only screen and (max-width: 1025px) {
+
+		.text .name {
+			display: none;
+		}
 
 		/*#home .project a.fill {
 			color: #000;
