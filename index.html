@@ -46,58 +46,7 @@
 	</div>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript">
-
-	 // $(window).scroll(function() {    
-		// 	    var scrollTop = $(window).scrollTop();
-
-		// 	    if (scrollTop > 1) {
-		// 	        $("body").addClass("scrolled");
-		// 	    } else {
-		// 	        $("body").removeClass("scrolled");
-		// 	    }
-		// 	});
-
-	$(function() { 
-		$(".tog-mob-nav").click(function() { 
-			$(".mob-nav").toggleClass("open-mob-nav");     
-		});
-	});
-
-
-	$(function() { 
-
-	  $(".tog-modal").click(function() { 
-	    $(".modal").toggleClass("open");      
-	  });
-
-	  $(".log-in-btn").click(function() { 
-	    $(".modal").removeClass("sign-up-modal");      
-	    $(".modal").addClass("log-in-modal");      
-	  });
-
-	  $(".sign-up-btn, .send-message-form").click(function() { 
-	    $(".modal").removeClass("log-in-modal");      
-	    $(".modal").addClass("sign-up-modal");      
-	  });
-
-	});
-
-	// $('.scrollTo').click(function(){
-	//     $('html, body').animate({
-	//         scrollTop: $( $(this).attr('href') ).offset().top
-	//     }, 5);
-	//     return false;
-	// });
-
-	// $(window).scroll(function(){
-	//     if ($(this).scrollTop() > 50) {
-	//        $('.nav').addClass('scrolled');
-	//     } else {
-	//        $('.nav').removeClass('scrolled');
-	//     }
-	// });
-</script>
+<script src="script.js" type="text/javascript"></script>
 
 <div class="nav tog-mob-nav">
 		<div class="nav-btn">
